@@ -69,7 +69,7 @@ pipeline
 			}
 		}
 		
-		stage ('Docker Image')
+		stage ('Image Creation')
 		{
 			steps
 			{
@@ -86,7 +86,7 @@ pipeline
 			    }
 		    }
 
-		 stage ('Stop Running container')
+		 stage ('Container Stop')
 	    	{
 		        steps
 		        {
@@ -101,7 +101,7 @@ pipeline
 		        }
 		    }
 
-		 stage ('Docker deployment')
+		 stage ('Deploying Docker')
 			{
 			    steps
 			    {
