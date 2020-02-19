@@ -42,7 +42,7 @@ pipeline
 		{
 			steps
 			{
-				withSonarQubeEnv("agrimNagp") 
+				withSonarQubeEnv("SonarQubeForAgrim") 
 				{
 					sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar"
 				}
